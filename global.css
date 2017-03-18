@@ -52,7 +52,7 @@ h1 {
 }
 
 #wrapper {
-	background: url(../images/bkg_mainSilk.jpg) repeat center;
+	background: url(bkg_mainSilk.jpg) repeat center;
 	/*text-align: center;
 	margin: 0px auto;
 	position: relative;
@@ -91,7 +91,7 @@ h1 {
 	/*height: 36px;
 	clear: both;*/
 	border: none;
-	background: url(../images/nav_btn_bkg.jpg) repeat-x;
+	background: url(nav_btn_bkg.jpg) repeat-x;
 }
 #navigation .navbar-nav {
 	margin-top: -7px;
@@ -122,7 +122,7 @@ h1 {
 	padding-right: 3px;
 	padding-left: 1px;*/
 	font-size: 1.1em;
-	background: url(../images/nav_btn_bkg.jpg) repeat-x center;
+	background: url(nav_btn_bkg.jpg) repeat-x center;
 }
 
 /*#navigation .floatrt { float: right; }
@@ -206,7 +206,7 @@ h1 {
 #mainContent #formWrapper #formSeeWho {
 	/*width: 297px;*/
 	padding: 10px;
-	background: #949393 url(../images/form_bkgtile.jpg) repeat-x bottom;
+	background: #949393 url(form_bkgtile.jpg) repeat-x bottom;
 	color: #000;
 	-moz-box-shadow: 0 0 5px 5px #900;
 	-webkit-box-shadow: 0 0 5px 5px #900;
