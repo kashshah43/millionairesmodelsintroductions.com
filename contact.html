@@ -1,0 +1,179 @@
+<?php
+require_once("formtools/global/api/api.php");
+$fields = ft_api_init_form_page(5);
+$params = array(
+  "submit_button" => "submit",
+  "next_page" => "subform.php",
+  "form_data" => $_POST
+    );
+ft_api_process_form($params);
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/global.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Contact Millionaires and Models Introductions</title>
+<!-- InstanceEndEditable -->
+<link href="_css/global.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationCheckbox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href='_css/hoverbox.css' type="text/css" media="screen, projection" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" href='_css/ie_fixes.css' type="text/css" media="screen, projection" />
+<![endif]-->
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+<script src="AC_RunActiveContent.js" type="text/javascript"></script>
+
+<!-- InstanceBeginEditable name="head" -->
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationConfirm.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="rtColm" type="boolean" value="true" -->
+<!-- InstanceParam name="rtColTop" type="boolean" value="true" -->
+<!-- InstanceParam name="rtColBot" type="boolean" value="false" -->
+<!-- InstanceParam name="imgDiv" type="boolean" value="false" -->
+<!-- InstanceParam name="form" type="boolean" value="false" -->
+
+</head>
+
+<body>
+<div id="superWrap">
+  <div id="wrapper">
+    <div id="header">
+    <img src="images/header_rt.png" id="headRt" width="168" height="80" alt="Wealth, Beauty, Adventure" /><img src="images/header_lft.png" id="headTitle" width="628" height="69" alt="Millionaires and Models Introductions" /></div>
+    <div id="navigation">
+      <img src="images/nav_btn_blankLeft.jpg" alt="left spacer navigation" width="200" height="36" class="floatlft" /><img src="images/nav_btn_blankRt.jpg" alt="rt spacer navigation" width="200" height="36" class="floatrt" />
+      <ul>
+        <li id="first"><a href="index.php">Home</a></li>
+        <li><a href="whymen.php">Why  Men Choose Us</a></li>
+        <li><a href="whywomen.php">Why Women Join Us</a></li>
+        <li><a href="fphotos.php">Female Photos</a></li>
+        <li><a href="process.php">Match Process</a></li>
+        <li><a href="locations.php">Locations</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="mainContent">
+      <div class="colm2">
+      <div id="rtColTop"><!-- InstanceBeginEditable name="rtTopCopy" --><img src="images/contactImg.jpg" width="300" height="590" alt="Contact Model" /><!-- InstanceEndEditable --></div>
+      
+			
+			
+      </div>
+    
+    <div class="colm1">
+      
+      <!-- InstanceBeginEditable name="lftHeadline" --><h1 class="leftalign contact">Contact Us</h1><!-- InstanceEndEditable -->
+      <!-- InstanceBeginEditable name="lftColCopy" --><form action="globalContact.php" method="post" enctype="application/x-www-form-urlencoded" name="formContact" id="formContact">
+				<p><span id="firstName">
+          <label for="fname">First Name:<br />
+          </label>
+          <input type="text" name="fname" id="fname" tabindex="10" />
+          <span class="textfieldRequiredMsg">Your first name is required.</span></span></p>
+        <p id="lastName">
+          <label for="lname">Last Name:<br />
+          </label>
+          <input type="text" name="lname" id="lname" tabindex="20" />
+        </p>
+        <p id="etype"><span id="emailContact">
+        <label for="email">Email:<br />
+        </label>
+        <input type="text" name="email" id="email" tabindex="30" />
+        <span class="textfieldRequiredMsg">An email is required.</span><span class="textfieldInvalidFormatMsg">Please check your email address.</span></span></p>
+        <p id="everify"><span id="confirmContact">
+          <label for="verify">Re-type Email:<br />
+          </label>
+          <input type="text" name="verify" id="verify" tabindex="40" />
+          <span class="confirmRequiredMsg">Please re-enter your email.</span><span class="confirmInvalidMsg">Your emails don't match. Please retype.</span></span></p>
+        <p>
+          <label for="phone">Phone:<br />
+          </label>
+          <input type="text" name="hphone" id="phone" tabindex="50" />
+        </p>
+        <p>
+          <label for="msg">Please type your message here:</label>
+          <br />
+          <span id="sprytextarea1">
+          <textarea name="msg" id="msg" cols="45" rows="5" tabindex="60"></textarea>
+          <span class="textareaRequiredMsg">Please type your message.</span><span class="textareaMaxCharsMsg">Please keep your message below 500 characters.</span></span>        </p>
+        <p id="submit">
+          <input type="submit" name="submit" id="submit" value="Send Message" tabindex="70" />
+        </p>
+        </form>
+				<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("firstName", "none", {validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("emailContact", "email", {validateOn:["blur"]});
+var spryconfirm1 = new Spry.Widget.ValidationConfirm("confirmContact", "email", {validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {maxChars:500});
+        </script><!-- InstanceEndEditable -->
+      </div>
+    </div>   
+      
+    <div id="clearContent"><img src="images/clearCopy_lft.jpg" width="100" height="1" class="floatlft" /><img src="images/clearCopy_rt.jpg" width="100" height="1" class="floatrt" />
+    </div>    
+  </div> <!-- End wrapper -->  
+    <div id="lookingForFooter">Looking for Wealthy Men • Beautiful Females •  Affluent Women • Attractive Males?</div>
+    
+    <div id="footerCpls">
+      <ul class="hoverbox">
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl01_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl01.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl02_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl02.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl12_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl12.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl03_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl03.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl04_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl04.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl11_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl11.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl05_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl05.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl06_th.jpg" alt="description" width="80" height="54" /><img src="images/footerCpls/cpl06.jpg" alt="description" class="preview" /></a>
+        </li>
+          <li><a href="#"><img src="images/footerCpls/thumbs/cpl07_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl07.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl13_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl13.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl08_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl08.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl09_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl09.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl14_th.jpg" alt="description" width="80" height="53" /><img src="images/footerCpls/cpl14.jpg" alt="description" class="preview" /></a>
+        </li>
+        <li><a href="#"><img src="images/footerCpls/thumbs/cpl10_th.jpg" alt="description" width="80" height="54" /><img src="images/footerCpls/cpl10.jpg" alt="description" class="preview" /></a>
+        </li>
+        </ul>
+    </div>
+    <div class="clearboth"></div>
+    
+  <div id="footer">
+    <div id="widthSet"><img src="images/widthSet_footer.gif" width="850" height="1" alt="width setter" /></div>
+    <div id="copyright">&copy; 2011 Elite Partners</div>
+    <div id="footerNav">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="whymen.php">Why Men Choose Us</a></li>
+        <li><a href="whywomen.php">Why Women Choose Us</a></li>
+        <li><a href="fphotos.php">Female Photos</a></li>
+        <br /><li><a href="process.php">Match Process</a></li>
+        <li><a href="locations.php">Locations</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+<!--        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../policy.html">Policy</a></li> -->
+        </ul>
+      </div>
+    </div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

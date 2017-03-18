@@ -1,0 +1,50 @@
+.hoverbox
+{
+	cursor: default;
+	list-style: none;
+	padding: 0px;
+	width: 100%;
+}
+
+.hoverbox a
+{
+	cursor: default;
+	border-style: none;
+}
+
+.hoverbox a .preview
+{
+	display: none;
+}
+
+.hoverbox a:hover .preview
+{
+	display: block;
+	position: absolute;
+	top: -175px;
+	left: -100px;
+	z-index: 500;
+}
+
+.hoverbox img
+{
+	vertical-align: top;
+	width: 80px;
+	height: 53px;
+}
+
+.hoverbox li
+{
+	border-style: none;
+	display: inline;
+	/*float: left;*/
+	position: relative;
+	padding-right: 3px;
+	padding-bottom: 3px;
+}
+
+.hoverbox .preview
+{
+	width: 300px;
+	height: 200px;
+}
